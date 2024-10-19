@@ -1,9 +1,7 @@
 /* home */
 #home {
-	height: 100vh !important;
-	background-image: url(/mesh-47.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 90vh !important;
+	background-color: none;
 }
 
 #home .inner-row {

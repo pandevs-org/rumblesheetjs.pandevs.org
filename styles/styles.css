@@ -1,5 +1,8 @@
 body {
 	background-color: var(--clr-accent-300);
+	background-image: url(/mesh-47.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .section {
@@ -12,7 +15,7 @@ body {
 }
 
 .section-secondary {
-	background-color: var(--clr-accent-100);
+	background-color: var(--clr-accent-200);
 }
 
 .section-heading {
@@ -44,4 +47,8 @@ body {
 
 .content-secondary {
 	background-color: var(--clr-accent-100);
+}
+
+.contrib-info {
+	color: var(--clr-accent-950);
 }
