@@ -1,0 +1,153 @@
+/* home */
+#home {
+	height: 100vh !important;
+	background-image: url(/mesh-47.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home .inner-row {
+	height: 35vh;
+	width: 35vw;
+}
+
+#home .home-cols {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#home .home-heading {
+	font-family: Corinthia;
+	font-size: var(--fs-600);
+	color: var(--clr-accent-800);
+}
+
+#home .home-info {
+	font-family: Continent;
+	font-size: var(--fs-300);
+	color: var(--clr-accent-950);
+}
+
+/* know more btn */
+.know-more-btn {
+	appearance: none;
+	background-color: var(--clr-accent-800);
+	border: 2px solid var(--clr-accent-800);
+	border-radius: 7px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-size: var(--fs-300);
+	line-height: normal;
+	margin: 4px;
+	padding: 10px;
+	height: 60px;
+	width: fit-content;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	will-change: transform;
+  }
+  
+  .know-more-btn:disabled {
+	pointer-events: none;
+  }
+  
+  .know-more-btn:hover {
+	box-shadow: rgba(78,186, 191, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+  }
+  
+  .know-more-btn:active {
+	box-shadow: none;
+	transform: translateY(0);
+  }
+
+
+/* media query */
+@media (max-width: 1200px) {
+	#home .home-heading {
+		font-size: var(--fs-800) !important;
+	}
+
+	#home .home-info {
+		font-size: var(--fs-300);
+	}
+
+	#home .inner-row {
+		height: 40vh;
+	}
+
+	#home .main-img {
+		max-width: 400px !important;
+	}
+}
+
+@media (max-width: 945px) {
+	#home .home-heading {
+		font-size: var(--fs-750) !important;
+	}
+
+	#home .inner-row {
+		height: 50vh;
+	}
+
+	#home .main-img {
+		max-width: 350px !important;
+	}
+}
+
+@media (max-width: 780px) {
+	#home .home-heading {
+		font-size: var(--fs-650) !important;
+	}
+
+	#home .home-info {
+		font-size: var(--fs-250);
+	}
+
+	#home .inner-row {
+		height: 55vh;
+	}
+
+	#home .side-img {
+		max-width: 90px !important;
+	}
+
+	#home .main-img {
+		max-width: 300px !important;
+	}
+}
+
+@media (max-width: 550px) {
+	#home .inner-row {
+		height: 55vh;
+	}
+
+	#home .side-img {
+		max-width: 90px !important;
+	}
+
+	#home .main-img {
+		max-width: 250px !important;
+	}
+}
+
+@media (max-height: 820px) {
+	#home .inner-row {
+		height: 45vh;
+	}
+
+	#home .side-img {
+		max-width: 90px !important;
+	}
+
+	#home .main-img {
+		max-width: 250px !important;
+	}
+}

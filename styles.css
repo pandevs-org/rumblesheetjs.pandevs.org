@@ -1,0 +1,47 @@
+body {
+	background-color: var(--clr-accent-300);
+}
+
+.section {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.section-primary {
+	background-color: var(--clr-accent-300);
+}
+
+.section-secondary {
+	background-color: var(--clr-accent-100);
+}
+
+.section-heading {
+	color: var(--clr-heading);
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	font-size: var(--fs-450);
+	position: relative;
+	padding-bottom: 5px;
+	text-shadow: rgba(78, 186, 191, 0.1) 0 0 2px,
+		rgba(78, 186, 191, 0.3) 4px 5px 0,
+		rgba(78, 186, 191, 0.2) 7px 11px 0,
+		rgba(78, 186, 191, 0.1) 12px 17px 0,
+		rgba(78, 186, 191, 0.05) 17px 23px 0
+}
+
+.section-sub-heading {
+	color: var(--clr-sub-heading);
+	font-size: var(--fs-350);
+}
+
+.content {
+	max-width: 1250px;
+}
+
+.content-primary {
+	background-color: var(--clr-accent-300);
+}
+
+.content-secondary {
+	background-color: var(--clr-accent-100);
+}
