@@ -1,7 +1,8 @@
-@import "global.css";
+@import "../../../styles/globals.css";
 
 nav {
-	background-color: none;
+	background-color: var(--clr-accent-400);
+    height: 8vh; 
 }
 
 .hamburger-inner,
@@ -34,6 +35,7 @@ nav {
 	color: var(--clr-accent-700) !important;
 	font-size: var(--fs-200) !important;
 	position: relative;
+    height: 100%;
 }
 
 .nav-link.active {

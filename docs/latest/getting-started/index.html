@@ -1,10 +1,274 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Bootstrap cdn-->
+    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+    <nav class="navbar navbar-expand-lg static-top navbar-scrolled shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="/public/content/logo.webp" class="logo rounded-circle" style="" alt="rumblesheet logo"> -->
+                RumbleSheetJS
+            </a>
+            <button class="hamburger hamburger--vortex navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" aria-label="home link" aria-current="page" href="../../../index.html">Home</a>
+                    <a class="nav-link" aria-label="get started link"
+                        href="./docs/latest/getting-started/index.html">Get Started</a>
+                    <a class="nav-link" aria-label="examples link" href="#examples">Examples</a>
+                    <a class="nav-link" aria-label="contribute link" href="#contribute">Contribute</a>
+                    <a id="nav-item" target="_blank" aria-label="Fork" data-balloon-pos="down"
+                        href="https://github.com/BorisEdison/Honey-Badger"
+                        class="d-flex align-items-center justify-content-start">
+                        <button class="fork-btn" aria-label="fork btn"
+                            class="d-flex justify-content-center align-items-center">
+                            <span class="iconify" data-icon="mdi:github" data-width="23" data-height="23"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-layout d-flex">
+        <div class="sidebar-container">
+            <div class="sidebar pt-5" data-aos="fade-up" data-aos-delay="100">
+
+                <ul id="getting-started-ul">
+                    <li class="sidebar-li hide-after active" id="sidebar-li-getting-started">
+                        <span class="sidebar-div-heading">Getting Started</span>
+                    </li>
+
+                    <li class="sidebar-li getting-started-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Getting Started</span>
+                    </li>
+
+                    <li class="sidebar-li getting-started-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Installation</span>
+                    </li>
+
+                    <li class="sidebar-li getting-started-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Integration</span>
+                    </li>
+
+                    <li class="sidebar-li getting-started-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Step-by-step guide</span>
+                    </li>
+                </ul>
+
+                <ul id="general-ul">
+                    <li class="sidebar-li hide-after active" id="sidebar-li-general">
+                        <span class="sidebar-div-heading">General</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">General</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Accessibility</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Colors</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Data Structure</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Fonts</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Options</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Padding</span>
+                    </li>
+
+                    <li class="sidebar-li general-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Performance</span>
+                    </li>
+                </ul>
+
+                <ul id="configuration-ul">
+                    <li class="sidebar-li hide-after active" id="sidebar-li-configuration">
+                        <span class="sidebar-div-heading">Configuration</span>
+                    </li>
+
+                    <li class="sidebar-li configuration-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Configuration</span>
+                    </li>
+                </ul>
+
+                <ul id="developers-ul">
+                    <li class="sidebar-li hide-after active" id="sidebar-li-developers">
+                        <span class="sidebar-div-heading">Developers</span>
+                    </li>
+
+                    <li class="sidebar-li developers-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Api</span>
+                    </li>
+
+                    <li class="sidebar-li developers-inner-li d-none">
+                        <span class="sidebar-div-sub-heading">Contributing</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="main-conainter">
+
+        </div>
+
+    </div>
+
+    <!-- <footer> -->
+    <div class="footer d-flex justify-content-center align-items-center">
+        <div class="row" style="margin-right: 0; margin-left: 0">
+            <div class="col-12 d-flex justify-content-center pt-2 pb-2 text-center">
+                <p class="contrib-info m-0" class="m-0">Built with all the
+                    <span class="iconify" style="color: var(--clr-accent-600);" data-icon="mdi:heart" data-width="23"
+                        data-height="23"></span>
+                    in the world by <br> pandevs.org
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+
+    <script>
+
+        // Select all elements with the class .getting-started-inner-li
+        const gettingStartedInnerLi = document.querySelectorAll('.getting-started-inner-li');
+        const gettingStartedLi = document.querySelector('#sidebar-li-getting-started');
+
+        // Select all elements with the class .general-inner-li
+        const generalInnerLi = document.querySelectorAll('.general-inner-li');
+        const generalLi = document.querySelector('#sidebar-li-general');
+
+        // Select all elements with the class .configuration-inner-li
+        const configurationInnerLi = document.querySelectorAll('.configuration-inner-li');
+        const configurationLi = document.querySelector('#sidebar-li-configuration');
+
+        // Select all elements with the class .developer-inner-li
+        const developersInnerLi = document.querySelectorAll('.developers-inner-li');
+        const developersLi = document.querySelector('#sidebar-li-developers');
+
+        // Function to close all sections except the one being clicked
+        function closeOtherSections(openSection) {
+            const sections = {
+                'gettingStarted': {
+                    innerLi: gettingStartedInnerLi,
+                    li: gettingStartedLi
+                },
+                'general': {
+                    innerLi: generalInnerLi,
+                    li: generalLi
+                },
+                'configuration': {
+                    innerLi: configurationInnerLi,
+                    li: configurationLi
+                },
+                'developers': {
+                    innerLi: developersInnerLi,
+                    li: developersLi
+                }
+            };
+
+            // Loop through each section, close if it's not the one clicked
+            for (const section in sections) {
+                if (section !== openSection) {
+                    sections[section].innerLi.forEach(function (element) {
+                        element.classList.add('d-none'); // Hide the section
+                    });
+                    sections[section].li.classList.add('hide-after'); // Remove the toggle indicator
+                }
+            }
+        }
+
+        // Toggle 'Getting Started' section
+        gettingStartedLi.addEventListener('click', function () {
+            gettingStartedLi.classList.toggle('hide-after');
+
+            // Toggle the 'd-none' class for 'Getting Started' inner items
+            gettingStartedInnerLi.forEach(function (element) {
+                element.classList.toggle('d-none');
+            });
+
+            // Close other sections
+            closeOtherSections('gettingStarted');
+        });
+
+        // Toggle 'General' section
+        generalLi.addEventListener('click', function () {
+            this.classList.toggle('hide-after');
+
+            // Toggle the 'd-none' class for 'General' inner items
+            generalInnerLi.forEach(function (element) {
+                element.classList.toggle('d-none');
+            });
+
+            // Close other sections
+            closeOtherSections('general');
+        });
+
+        // Toggle 'Configuration' section
+        configurationLi.addEventListener('click', function () {
+            this.classList.toggle('hide-after');
+
+            // Toggle the 'd-none' class for 'Configuration' inner items
+            configurationInnerLi.forEach(function (element) {
+                element.classList.toggle('d-none');
+            });
+
+            // Close other sections
+            closeOtherSections('configuration');
+        });
+
+        // Toggle 'Developers' section
+        developersLi.addEventListener('click', function () {
+            this.classList.toggle('hide-after');
+
+            // Toggle the 'd-none' class for 'Developers' inner items
+            developersInnerLi.forEach(function (element) {
+                element.classList.toggle('d-none');
+            });
+
+            // Close other sections
+            closeOtherSections('developers');
+        });
+
+    </script>
+
 </body>
+
+
+
 </html>

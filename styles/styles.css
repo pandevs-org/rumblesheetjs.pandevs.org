@@ -51,4 +51,35 @@ body {
 
 .contrib-info {
 	color: var(--clr-accent-950);
+	font-size: var(--fs-150);
+}
+
+/* Toggle Theme */
+#toggle-theme {
+	position: fixed;
+	border: 0;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	margin: 15px;
+	text-decoration: none;
+	box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%) !important;
+}
+
+#toggle-theme.scroll {
+	display: flex;
+}
+
+#toggle-theme {
+	background-color: var(--clr-accent-700);
+	height: 6vh;
+	width: 6vh;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 780px) {
+	.contrib-info {
+		font-size: var(--fs-100);
+	}
 }
