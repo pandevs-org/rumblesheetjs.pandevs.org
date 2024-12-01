@@ -1,8 +1,0 @@
-body {
-    background-color: var(--clr-accent-200);
-}
-
-.footer {
-	height: 8vh;
-    font-size: var(--fs-100);
-  }

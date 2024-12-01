@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RumbleSheet.JS</title>
+    <link rel="shortcut icon" href="imageedit_8_9562522966.png" type="image/x-icon">
+
 
     <!-- Bootstrap cdn-->
     <link href="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="./public/styles/globals.css">
+    <link rel="stylesheet" href="./public/styles/navbar.css">
+    <link rel="stylesheet" href="./public/styles/home.css">
+    <link rel="stylesheet" href="./public/styles/styles.css">
+
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top navbar-unscrolled">
+    <nav class="navbar navbar-home navbar-expand-lg fixed-top navbar-unscrolled">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <!-- <img src="/public/content/logo.webp" class="logo rounded-circle" style="" alt="rumblesheet logo"> -->
-                RumbleSheetJS
+                <img src="./public/assets/logo/logo-branding.png" height="50" alt="">
             </a>
             <button class="hamburger hamburger--vortex navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -35,8 +43,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" aria-label="home link" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" aria-label="get started link" href="./docs/latest/getting-started/index.html">Get Started</a>
-                    <a class="nav-link" aria-label="examples link" href="#examples">Examples</a>
+                    <a class="nav-link" aria-label="get started link"
+                        href="./docs/latest/getting-started/getting-started.html">Docs</a>
+                    <a class="nav-link" aria-label="demo link" href="#demo">Demo</a>
                     <a class="nav-link" aria-label="contribute link" href="#contribute">Contribute</a>
                     <a id="nav-item" target="_blank" aria-label="Fork" data-balloon-pos="down"
                         href="https://github.com/BorisEdison/Honey-Badger"
@@ -53,33 +62,35 @@
 
     <!-- Home Section -->
     <section id="home" class="d-flex justify-content-center align-items-center">
-            <div class="row home-content m-0  px-3">
-                <div class="col-12 p-0 mt-5 home-cols d-flex align-items-center justify-content-center">
-                    <h1 class="home-heading mb-0 text-center">RumbleSheetJS</h1>
-                </div>
-                <div class="col-12 p-0 home-cols home-info-div d-flex justify-content-center">
-                    <h2 class="home-info mb-0 text-center">Seamlessly integrate dynamic, interactive
-                        spreadsheets into any website for enhanced data management and visualization.
-                        </h1>
-                </div>
-                <div class="col-12 p-0 mt-4 home-cols home-info-div d-flex justify-content-center align-items-end">
-                    <button class="know-more-btn" aria-label="fork btn"
-                        class="d-flex justify-content-center align-items-center">
-                        <span class="iconify" data-icon="ion:book" data-width="23" data-height="23"></span>
-                        Read the docs
-                    </button>
-                </div>
+        <div class="row home-content m-0  px-3">
+            <div class="col-12 p-0 mt-5 home-cols d-flex align-items-center justify-content-center">
+                <img class="" src="./public/assets/logo/logo.png" height="120">
             </div>
+            <div class="col-12 p-0 home-cols home-info-div d-flex justify-content-center">
+                <h2 class="home-info mb-0 text-center">Seamlessly integrate dynamic, interactive
+                    spreadsheets into any website for enhanced data management and visualization.
+                    </h1>
+            </div>
+            <div class="col-12 p-0 mt-4 home-cols home-info-div d-flex justify-content-center align-items-end">
+                <button class="home-section-btn" aria-label="fork btn"
+                    class="d-flex justify-content-center align-items-center">
+                    Get Started
+                </button>
+            </div>
+        </div>
     </section>
 
     <!-- <footer> -->
     <div class="footer d-flex justify-content-center align-items-center">
         <div class="row" style="margin-right: 0; margin-left: 0">
             <div class="col-12 d-flex justify-content-center mt-4 mb-4 text-center">
-                <p class="contrib-info m-0" class="m-0">Built with all the
-                    <span class="iconify" style="color: var(--clr-accent-600);" data-icon="mdi:heart" data-width="23"
+                <p class="contrib-info m-0" class="m-0">
+                    Built with all the
+                    <span class="iconify" style="color: var(--clr-accent-700);" data-icon="mdi:heart" data-width="23"
                         data-height="23"></span>
-                    in the world by <br> pandevs.org
+                    in the world by
+                    <br>
+                    pandevs.org
                 </p>
             </div>
         </div>
