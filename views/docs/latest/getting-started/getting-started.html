@@ -15,11 +15,11 @@
         rel="stylesheet">
 
     <!-- local stylesheet -->
-    <link rel="stylesheet" href="../../../public/styles/globals.css">
-    <link rel="stylesheet" href="../../../public/styles/navbar.css">
-    <link rel="stylesheet" href="../../public/styles/main-container.css">
-    <link rel="stylesheet" href="../../public/styles/sidebar.css">
-    <link rel="stylesheet" href="../../public/styles/styles.css">
+    <link rel="stylesheet" href="../../../../../public/styles/globals.css">
+    <link rel="stylesheet" href="../../../../public/styles/navbar.css">
+    <link rel="stylesheet" href="../../../public/styles/main-container.css">
+    <link rel="stylesheet" href="../../../public/styles/sidebar.css">
+    <link rel="stylesheet" href="../../../public/styles/styles.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <nav class="navbar navbar-other-sections navbar-expand-lg static-top navbar-scrolled shadow-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="../../../public/assets/logo/logo-branding.png" height="50" alt="">
+                <img src="../../../../public/assets/logo/logo-branding.png" height="50" alt="">
             </a>
             <button class="hamburger hamburger--vortex navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -39,11 +39,16 @@
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" aria-label="home link" aria-current="page" href="../../../index.html">Home</a>
-                    <a class="nav-link" aria-label="get started link"
+                    <a class="nav-link" aria-label="home link" aria-current="page"
+                        href="../../../../index.html">Home</a>
+                    <a class="nav-link active" aria-label="get started link"
                         href="./docs/latest/getting-started/index.html">Docs</a>
-                    <a class="nav-link" aria-label="demo link" href="#demo">Demo</a>
+                    <a class="nav-link" target="_blank" aria-label="demo link" href="#demo">Demo
+                        <span class="iconify redirect-icon" data-icon="eva:external-link-outline" data-width="18"
+                            data-height="18"></span>
+                    </a>
                     <a class="nav-link" aria-label="contribute link" href="#contribute">Contribute</a>
+                    <a class="nav-link" aria-label="sponsor link" href="#sponsor">Sponsor</a>
                     <a id="nav-item" target="_blank" aria-label="Fork" data-balloon-pos="down"
                         href="https://github.com/BorisEdison/Honey-Badger"
                         class="d-flex align-items-center justify-content-start">
@@ -62,12 +67,12 @@
             <div class="sidebar pt-5" data-aos="fade-up" data-aos-delay="100">
 
                 <ul id="getting-started-ul">
-                    <li class="sidebar-li active" id="sidebar-li-getting-started">
-                        <span class="sidebar-div-heading">Getting Started</span>
+                    <li class="sidebar-li" id="sidebar-li-getting-started">
+                        <span class="sidebar-div-heading active">Getting Started</span>
                     </li>
 
-                    <li class="sidebar-li getting-started-inner-li">
-                        <span class="sidebar-div-sub-heading">Getting Started</span>
+                    <li class="sidebar-li getting-started-inner-li active">
+                        <span class="sidebar-div-sub-heading active">Getting Started</span>
                     </li>
 
                     <li class="sidebar-li getting-started-inner-li">
@@ -80,42 +85,62 @@
                 </ul>
 
                 <ul id="general-ul">
-                    <li class="sidebar-li hide-after active" id="sidebar-li-general">
+                    <li class="sidebar-li" id="sidebar-li-general">
                         <span class="sidebar-div-heading">General</span>
                     </li>
 
-                    <li class="sidebar-li general-inner-li d-none">
+                    <li class="sidebar-li general-inner-li">
                         <span class="sidebar-div-sub-heading">Accessibility</span>
                     </li>
 
-                    <li class="sidebar-li general-inner-li d-none">
+                    <li class="sidebar-li general-inner-li">
                         <span class="sidebar-div-sub-heading">Colors</span>
                     </li>
 
-                    <li class="sidebar-li general-inner-li d-none">
+                    <li class="sidebar-li general-inner-li">
                         <span class="sidebar-div-sub-heading">Data Structure</span>
                     </li>
 
-                    <li class="sidebar-li general-inner-li d-none">
+                    <li class="sidebar-li general-inner-li">
                         <span class="sidebar-div-sub-heading">Fonts</span>
                     </li>
 
-                    <li class="sidebar-li general-inner-li d-none">
+                    <li class="sidebar-li general-inner-li">
                         <span class="sidebar-div-sub-heading">Options</span>
                     </li>
 
-                    <li class="sidebar-li general-inner-li d-none">
+                    <li class="sidebar-li general-inner-li">
                         <span class="sidebar-div-sub-heading">Performance</span>
                     </li>
                 </ul>
 
                 <ul id="configuration-ul">
-                    <li class="sidebar-li hide-after active" id="sidebar-li-configuration">
+                    <li class="sidebar-li" id="sidebar-li-configuration">
                         <span class="sidebar-div-heading">Sheet Configuration</span>
                     </li>
 
-                    <li class="sidebar-li configuration-inner-li d-none">
-                        <span class="sidebar-div-sub-heading">Configuration</span>
+                    <li class="sidebar-li configuration-inner-li">
+                        <span class="sidebar-div-sub-heading">Sheet Configuration</span>
+                    </li>
+                </ul>
+
+                <ul id="contribute-ul">
+                    <li class="sidebar-li" id="sidebar-li-contribute">
+                        <span class="sidebar-div-heading">Contribute</span>
+                    </li>
+
+                    <li class="sidebar-li contribute-inner-li">
+                        <span class="sidebar-div-sub-heading">Contribute</span>
+                    </li>
+                </ul>
+
+                <ul id="sponsor-ul">
+                    <li class="sidebar-li" id="sidebar-li-sponsor">
+                        <span class="sidebar-div-heading">Sponsor</span>
+                    </li>
+
+                    <li class="sidebar-li sponsor-inner-li">
+                        <span class="sidebar-div-sub-heading">Sponsor</span>
                     </li>
                 </ul>
 

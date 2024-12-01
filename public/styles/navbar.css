@@ -1,5 +1,20 @@
 @import "global.css";
 
+nav>.container-fluid {
+	height: 100%;
+}
+
+nav>.container-fluid>#navbarNavAltMarkup {
+	height: 100%;
+}
+
+.navbar-nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .navbar-home {
 	background-color: none;
 }
@@ -25,19 +40,21 @@
 }
 
 .navbar-scrolled {
-	padding: 0px 48px 0px;
+	padding: 0px 24px 0px;
 }
 
 .navbar-unscrolled {
 	padding: 24px 48px 8px;
 }
 
-.nav-item {
-	text-decoration: none !important;
-}
 .nav-link {
 	white-space: nowrap;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: var(--clr-accent-700) !important;
+	text-decoration: none !important;
 	font-size: var(--fs-200) !important;
 	position: relative;
 }
@@ -54,7 +71,6 @@
 	color: var(--clr-accent-800) !important;
 }
 
-
 .nav-link:before {
 	position: absolute;
 	bottom: 2px;
@@ -70,6 +86,16 @@
 	opacity: 1;
 	transition: 0.5s transform ease, 0.8s opacity ease;
 	transform: translateX(0);
+}
+
+.nav-link.active:before {
+	opacity: 1;
+	transition: 0.5s transform ease, 0.8s opacity ease;
+	transform: translateX(0);
+}
+
+.redirect-icon {
+	margin-top: 3px;
 }
 
 /* fork btn */
