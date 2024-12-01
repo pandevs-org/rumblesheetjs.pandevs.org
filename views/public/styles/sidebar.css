@@ -66,6 +66,9 @@ ul {
     height: 15px;
     left: 0px;
 }
+.sidebar-li:first-of-type.active:before {
+    background: var(--clr-accent-950);
+}
 
 .sidebar-li::before,
 .sidebar-li::after {
@@ -77,7 +80,7 @@ ul {
 .sidebar-li::before {
     width: 12px;
     height: 12px;
-    border: 2px solid var(--clr-accent-800);
+    border: 2.5px solid var(--clr-accent-950);
     background: var(--clr-accent-500);
     border-radius: 50%;
     left: 0.8px;
