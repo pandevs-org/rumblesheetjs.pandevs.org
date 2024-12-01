@@ -27,8 +27,8 @@
 /* home-section-btn */
 .home-section-btn {
 	appearance: none;
-	background-color: var(--clr-accent-700);
-	border: 2px solid var(--clr-accent-700);
+	background-color: #8B1FEA;
+	border: 2px solid #8B1FEA;
 	border-radius: 7px;
 	box-sizing: border-box;
 	color: #FFFFFF;

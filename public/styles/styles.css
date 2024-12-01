@@ -21,7 +21,7 @@ body {
 	border: 0;
 	z-index: 10;
 	bottom: 0;
-	left: 0;
+	right: 0;
 	margin: 15px;
 	text-decoration: none;
 	box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%) !important;
@@ -32,9 +32,9 @@ body {
 }
 
 #toggle-theme {
-	background-color: var(--clr-accent-700);
 	height: 6vh;
 	width: 6vh;
+    background-color: #8B1FEA;
 	justify-content: center;
 	align-items: center;
 }

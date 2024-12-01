@@ -8,7 +8,35 @@ body {
     width: 100vw;
 }
 
+/* footer */
 .footer {
     height: 8vh;
     font-size: var(--fs-100);
+}
+.contrib-info {
+    color: var(--clr-accent-950);
+}
+
+/* Toggle Theme */
+#toggle-theme {
+	position: fixed;
+	border: 0;
+	z-index: 10;
+	bottom: 0;
+	right: 0;
+	margin: 15px;
+	text-decoration: none;
+	box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%) !important;
+}
+
+#toggle-theme.scroll {
+	display: flex;
+}
+
+#toggle-theme {
+	height: 6vh;
+	width: 6vh;
+    background-color: #8B1FEA;
+	justify-content: center;
+	align-items: center;
 }
