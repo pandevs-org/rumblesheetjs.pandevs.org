@@ -2,6 +2,8 @@
 
 nav>.container-fluid {
 	height: 100%;
+	padding-top: 6.250px;
+	padding-bottom: 6.250px;
 }
 
 nav>.container-fluid>#navbarNavAltMarkup {
@@ -15,13 +17,13 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	justify-content: center;
 }
 
-.navbar-home {
-	background-color: none;
+.navbar-bg {
+	background-color: var(--clr-accent-400);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
 
 .navbar-other-sections {
 	background-color: var(--clr-accent-400);
-	height: 8vh;
 }
 
 .hamburger-inner,
@@ -32,6 +34,9 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 .navbar-brand {
 	color: var(--clr-accent-800);
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .logo {
@@ -73,7 +78,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 .nav-link:before {
 	position: absolute;
-	bottom: 2px;
+	bottom: 0px;
 	content: "";
 	width: 83.5%;
 	height: 3px;
@@ -154,6 +159,12 @@ nav>.container-fluid>#navbarNavAltMarkup {
 @media (max-width: 550px) {
 	.logo {
 		width: 60px;
+	}
+	.navbar-unscrolled {
+		padding: 0;
+	}
+	.navbar-scrolled {
+		padding: 0;
 	}
 }
 

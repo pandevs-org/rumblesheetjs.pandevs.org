@@ -4,6 +4,7 @@ body {
 }
 
 .body-layout {
+	margin-top: 8vh;
     height: 84vh;
     width: 100vw;
 }

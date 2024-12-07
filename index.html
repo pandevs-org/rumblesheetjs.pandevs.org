@@ -16,6 +16,9 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap"
         rel="stylesheet">
 
+    <!-- Hamburger -->
+    <link rel="stylesheet" href="../../../../public/dist/hamburger.css">
+
     <!-- local stylesheet -->
     <link rel="stylesheet" href="./public/styles/globals.css">
     <link rel="stylesheet" href="./public/styles/navbar.css">
@@ -27,12 +30,12 @@
 
 <body>
 
-    <nav class="navbar navbar-home navbar-expand-lg fixed-top navbar-unscrolled">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-unscrolled">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./public/assets/logo/logo-branding.png" height="50" alt="">
             </a>
-            <button class="hamburger hamburger--vortex navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="hamburger hamburger--spin navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="hamburger-box">
@@ -52,7 +55,7 @@
                     <a class="nav-link" aria-label="contribute link" href="#contribute">Contribute</a>
                     <a class="nav-link" aria-label="sponsor link" href="#sponsor">Sponsor</a>
                     <a class="nav-link" id="nav-item" target="_blank" aria-label="Fork" data-balloon-pos="down"
-                        href="https://github.com/BorisEdison/Honey-Badger"
+                        href="https://github.com/pandevs-org/RumblesheetJS"
                         class="d-flex align-items-center justify-content-start">
                         <button class="fork-btn" aria-label="fork btn"
                             class="d-flex justify-content-center align-items-center">
@@ -77,7 +80,8 @@
             </div>
             <div class="col-12 p-0 mt-4 home-cols home-info-div d-flex justify-content-center align-items-end">
                 <button class="home-section-btn" aria-label="fork btn"
-                    class="d-flex justify-content-center align-items-center">
+                    class="d-flex justify-content-center align-items-center"
+                    onclick="window.location.href='./views/docs/latest/getting-started/getting-started.html';" >
                     Get Started
                 </button>
             </div>
@@ -123,7 +127,7 @@
         </script>
 
     <!-- local js -->
-    <script src="./public/js/toggleTheme.js"></script>
+    <script src="./public/js/index.js"></script>
 
 </body>
 

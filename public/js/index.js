@@ -52,3 +52,23 @@ if (localStorage.getItem('theme') != null) {
 }
 
 toggle.addEventListener('click', change_theme);
+
+
+
+// ----------------- navbar ----------------- //
+var hamburger = document.querySelector(".hamburger");
+var navbar = document.querySelector('.navbar')
+var navLinks = document.querySelectorAll('.nav-link')
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+  navbar.classList.toggle("navbar-bg")
+});
+
+// close nav-links on click
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active");
+    $('.navbar-collapse').removeClass('show')
+  })
+})
