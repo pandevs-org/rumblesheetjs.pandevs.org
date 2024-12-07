@@ -1,3 +1,9 @@
+// ----------------- preloader ----------------- //
+setTimeout(function(){
+    $('.preloader').addClass('d-none');
+    $('.main-content').removeClass('d-none');
+  }, 1500);
+
 // ----------------- Toggle Theme ----------------- //
 let toggle = document.getElementById("toggle-theme");
 let root = document.querySelector(':root');
