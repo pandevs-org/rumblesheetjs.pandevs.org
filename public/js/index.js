@@ -69,6 +69,7 @@ hamburger.addEventListener("click", function () {
 navLinks.forEach((navLink) => {
   navLink.addEventListener("click", function () {
     hamburger.classList.toggle("is-active");
+    navbar.classList.toggle("navbar-bg")
     $('.navbar-collapse').removeClass('show')
   })
 })
