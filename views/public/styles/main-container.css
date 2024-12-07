@@ -1,3 +1,9 @@
 .main-container {
     width: 80%;
 }
+
+@media (max-width: 1200px) {
+    .main-container {
+        width: 100%;
+    }
+}   

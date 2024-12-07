@@ -9,9 +9,9 @@ const change_theme = () => {
 
         root.style.setProperty('--clr-accent-100', '#560C97');
         root.style.setProperty('--clr-accent-200', '#36085E');
-        root.style.setProperty('--clr-accent-300','#7612CE');
-        root.style.setProperty('--clr-accent-400','#8B1FEA');
-        root.style.setProperty('--clr-accent-500','#A856F0');
+        root.style.setProperty('--clr-accent-300', '#7612CE');
+        root.style.setProperty('--clr-accent-400', '#8B1FEA');
+        root.style.setProperty('--clr-accent-500', '#A856F0');
         root.style.setProperty('--clr-accent-600', '#D5B0FD');
         root.style.setProperty('--clr-accent-700', '#DCBFFF');
         root.style.setProperty('--clr-accent-800', '#E5D4FF');
@@ -26,9 +26,9 @@ const change_theme = () => {
         $('body').css({ "background-image": "url(./public/assets/background/mesh-47.png)" })
         root.style.setProperty('--clr-accent-100', '#ffffff');
         root.style.setProperty('--clr-accent-200', '#F1EAFF');
-        root.style.setProperty('--clr-accent-300','#E5D4FF');
-        root.style.setProperty('--clr-accent-400','#DCBFFF');
-        root.style.setProperty('--clr-accent-500','#D5B0FD');
+        root.style.setProperty('--clr-accent-300', '#E5D4FF');
+        root.style.setProperty('--clr-accent-400', '#DCBFFF');
+        root.style.setProperty('--clr-accent-500', '#D5B0FD');
         root.style.setProperty('--clr-accent-600', '#8B1FEA');
         root.style.setProperty('--clr-accent-700', '#8B1FEA');
         root.style.setProperty('--clr-accent-800', '#7612CE');
@@ -61,15 +61,30 @@ var navbar = document.querySelector('.navbar')
 var navLinks = document.querySelectorAll('.nav-link')
 
 hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("is-active");
-  navbar.classList.toggle("navbar-bg")
+    hamburger.classList.toggle("is-active");
+    navbar.classList.toggle("navbar-bg")
 });
 
 // close nav-links on click
 navLinks.forEach((navLink) => {
-  navLink.addEventListener("click", function () {
-    hamburger.classList.toggle("is-active");
-    navbar.classList.toggle("navbar-bg")
-    $('.navbar-collapse').removeClass('show')
-  })
+    navLink.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        navbar.classList.toggle("navbar-bg")
+        $('.navbar-collapse').removeClass('show')
+    })
 })
+
+
+// ----------------- sidebar toggler ----------------- //
+var sidebarTogglerClose = document.querySelector(".sidebar-toggler-close");
+var sidebarTogglerOpen = document.querySelector(".sidebar-toggler-open");
+
+var sidebarContainer = document.querySelector(".sidebar-container")
+
+sidebarTogglerClose.addEventListener("click", function () {
+    sidebarContainer.style.display = "none";
+});
+
+sidebarTogglerOpen.addEventListener("click", function () {
+    sidebarContainer.style.display = "block";
+});
