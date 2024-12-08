@@ -7,7 +7,7 @@
 }
 
 .load {
-	animation: rotation 3s infinite linear;
+	animation: rotation 2.5s infinite linear;
 }
 
 @keyframes rotation {

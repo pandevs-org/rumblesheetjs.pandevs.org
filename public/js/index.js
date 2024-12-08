@@ -14,9 +14,9 @@ const change_theme = () => {
         toggle.childNodes[1].setAttribute("data-icon", "ph:sun-fill");
 
         root.style.setProperty('--clr-accent-100', '#560C97');
-        root.style.setProperty('--clr-accent-200', '#36085E');
+        root.style.setProperty('--clr-accent-200', '#2A1240');
         root.style.setProperty('--clr-accent-300', '#7612CE');
-        root.style.setProperty('--clr-accent-400', '#8B1FEA');
+        root.style.setProperty('--clr-accent-400', '#4B1877');
         root.style.setProperty('--clr-accent-500', '#A856F0');
         root.style.setProperty('--clr-accent-600', '#D5B0FD');
         root.style.setProperty('--clr-accent-700', '#DCBFFF');
@@ -24,12 +24,12 @@ const change_theme = () => {
         root.style.setProperty('--clr-accent-900', '#F1EAFF');
         root.style.setProperty('--clr-accent-950', '#ffffff');
 
-        $('body').css({ "background-image": "url(./public/assets/background/mesh-64.png)" })
+        $('body').css({ "background-image": "url(./public/assets/background/dark-gradient.png)" })
     } else {
         localStorage.setItem('theme', 'light');
         toggle.childNodes[1].setAttribute("data-icon", "ri:moon-fill");
         toggle.setAttribute("aria-label", "Toggle Light Theme");
-        $('body').css({ "background-image": "url(./public/assets/background/mesh-47.png)" })
+        $('body').css({ "background-image": "url(./public/assets/background/light-gradient.png)" })
         root.style.setProperty('--clr-accent-100', '#ffffff');
         root.style.setProperty('--clr-accent-200', '#F1EAFF');
         root.style.setProperty('--clr-accent-300', '#E5D4FF');
