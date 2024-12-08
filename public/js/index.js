@@ -35,7 +35,7 @@ const change_theme = () => {
         root.style.setProperty('--clr-accent-300', '#E5D4FF');
         root.style.setProperty('--clr-accent-400', '#DCBFFF');
         root.style.setProperty('--clr-accent-500', '#D5B0FD');
-        root.style.setProperty('--clr-accent-600', '#8B1FEA');
+        root.style.setProperty('--clr-accent-600', '#A856F0');
         root.style.setProperty('--clr-accent-700', '#8B1FEA');
         root.style.setProperty('--clr-accent-800', '#7612CE');
         root.style.setProperty('--clr-accent-900', '#560C97');
