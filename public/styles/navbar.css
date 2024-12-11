@@ -6,9 +6,11 @@ nav>.container-fluid {
 	padding-bottom: 6.250px;
 }
 
+
 nav>.container-fluid>#navbarNavAltMarkup {
 	height: 100%;
 }
+
 
 .navbar-nav {
 	height: 100%;
@@ -45,7 +47,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 }
 
 .navbar-scrolled {
-	padding: 0px 24px 0px;
+	padding: 2px 48px 8px;
 }
 
 .navbar-unscrolled {
@@ -78,7 +80,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 .nav-link:before {
 	position: absolute;
-	bottom: 0px;
+	bottom: -24px;
 	content: "";
 	width: 83.5%;
 	height: 3px;
@@ -152,6 +154,18 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	.fork-btn {
 		margin: 4px 0;
 	}
+
+	.nav-link:before {
+		position: absolute;
+		bottom: 0px;
+		content: "";
+		width: 83.5%;
+		height: 3px;
+		background: var(--clr-accent-800);
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	
 }
 
 @media (max-width: 780px) {}
