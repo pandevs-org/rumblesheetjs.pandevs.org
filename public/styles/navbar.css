@@ -47,11 +47,21 @@ nav>.container-fluid>#navbarNavAltMarkup {
 }
 
 .navbar-scrolled {
-	padding: 2px 48px 8px;
+	padding: 2px 48px 2px;
+	max-height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+
 }
 
 .navbar-unscrolled {
-	padding: 24px 48px 8px;
+	padding: 2px 48px 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
 }
 
 .nav-link {
@@ -80,7 +90,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 .nav-link:before {
 	position: absolute;
-	bottom: -24px;
+	bottom: -18px;
 	content: "";
 	width: 83.5%;
 	height: 3px;
