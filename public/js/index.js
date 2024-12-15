@@ -1,8 +1,8 @@
 // ----------------- preloader ----------------- //
-setTimeout(function(){
+setTimeout(function () {
     $('.preloader').addClass('d-none');
     $('.main-content').removeClass('d-none');
-  }, 1500);
+}, 1500);
 
 // ----------------- Toggle Theme ----------------- //
 let toggle = document.getElementById("toggle-theme");
@@ -63,20 +63,28 @@ toggle.addEventListener('click', change_theme);
 
 // ----------------- navbar ----------------- //
 var hamburger = document.querySelector(".hamburger");
-var navbar = document.querySelector('.navbar')
+var navbarUnscrolled = document.querySelector('.navbar-unscrolled')
+var navbarCollapsed = document.querySelector('.navbar-collapse')
 var navLinks = document.querySelectorAll('.nav-link')
 
 hamburger.addEventListener("click", function () {
     hamburger.classList.toggle("is-active");
-    navbar.classList.toggle("navbar-bg")
+
+    if (navbarUnscrolled) {   // as this is only present in index.html
+        navbarUnscrolled.classList.toggle("navbar-bg")
+    }
 });
 
 // close nav-links on click
 navLinks.forEach((navLink) => {
     navLink.addEventListener("click", function () {
         hamburger.classList.toggle("is-active");
-        navbar.classList.toggle("navbar-bg")
-        $('.navbar-collapse').removeClass('show')
+        navbarCollapsed.classList.remove('show')
+        if (navbarUnscrolled) {   // as this is only present in index.html
+            navbarUnscrolled.classList.remove("navbar-bg")
+        }
+        navLinks.forEach(nav => nav.classList.remove("active"));
+        this.classList.add("active");
     })
 })
 
@@ -84,28 +92,14 @@ navLinks.forEach((navLink) => {
 // ----------------- sidebar toggler ----------------- //
 var sidebarTogglerClose = document.querySelector(".sidebar-toggler-close");
 var sidebarTogglerOpen = document.querySelector(".sidebar-toggler-open");
-
 var sidebarContainer = document.querySelector(".sidebar-container")
 
-sidebarTogglerClose.addEventListener("click", function () {
-    sidebarContainer.style.display = "none";
-});
+if (sidebarTogglerClose || sidebarTogglerOpen) {
+    sidebarTogglerClose.addEventListener("click", function () {
+        sidebarContainer.style.display = "none";
+    });
 
-sidebarTogglerOpen.addEventListener("click", function () {
-    sidebarContainer.style.display = "block";
-});
-
-// active link underline 
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll(".nav-link");
-        
-            navLinks.forEach(link => {
-                link.addEventListener("click", function () {
-                    
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-           
-                    this.classList.add("active");
-                });
-            });
-        });
-
+    sidebarTogglerOpen.addEventListener("click", function () {
+        sidebarContainer.style.display = "block";
+    });
+}

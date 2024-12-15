@@ -1,4 +1,4 @@
-@import "global.css";
+@import "variables.css";
 
 nav>.container-fluid {
 	height: 100%;
@@ -46,19 +46,11 @@ nav>.container-fluid>#navbarNavAltMarkup {
 }
 
 .navbar-scrolled {
-	padding: 2px 48px 2px;
-	max-height: 75px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-
+	padding: 0px 48px 0px;
 }
 
 .navbar-unscrolled {
-	padding: 2px 48px 2px;
-	display: flex;	
-
+	padding: 24px 48px 8px;
 }
 
 .nav-link {
@@ -87,7 +79,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 .nav-link:before {
 	position: absolute;
-	bottom: -18px;
+	bottom: -12px;
 	content: "";
 	width: 83.5%;
 	height: 3px;
@@ -163,14 +155,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	}
 
 	.nav-link:before {
-		position: absolute;
 		bottom: 0px;
-		content: "";
-		width: 83.5%;
-		height: 3px;
-		background: var(--clr-accent-800);
-		transform: translateX(-100%);
-		opacity: 0;
 	}
 	
 }
