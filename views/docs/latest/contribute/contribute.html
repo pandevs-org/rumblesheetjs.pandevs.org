@@ -65,7 +65,7 @@
     </nav>
     <div class="body-layout d-flex">
         <div class="sidebar-container">
-            <div class="sidebar pt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="sidebar pt-5">
 
                 <button class="sidebar-toggler sidebar-toggler-close">
                     <span class="iconify" data-icon="icon-park-outline:indent-left" data-width="25"
@@ -73,12 +73,16 @@
                 </button>
 
                 <ul id="getting-started-ul" class="sidebar-ul">
-                    <li class="sidebar-li active" id="sidebar-li-getting-started">
-                        <span class="sidebar-div-heading active">Getting Started</span>
+                    <li class="sidebar-li" id="sidebar-li-getting-started"
+                        onclick="window.location.href='../getting-started/getting-started.html'">
+
+                        <span class="sidebar-div-heading">Getting Started</span>
                     </li>
 
-                    <li class="sidebar-li getting-started-inner-li active">
-                        <span class="sidebar-div-sub-heading active">Getting Started</span>
+                    <li class="sidebar-li getting-started-inner-li"
+                        onclick="window.location.href='../getting-started/getting-started.html'">
+
+                        <span class="sidebar-div-sub-heading">Getting Started</span>
                     </li>
 
                     <li class="sidebar-li getting-started-inner-li">
@@ -131,14 +135,12 @@
                 </ul>
 
                 <ul id="contribute-ul" class="sidebar-ul">
-                    <li class="sidebar-li" id="sidebar-li-contribute">
-                        <span class="sidebar-div-heading">Contribute</span>
+                    <li class="sidebar-li active" id="sidebar-li-contribute">
+                        <span class="sidebar-div-heading active">Contribute</span>
                     </li>
 
-                    <li class="sidebar-li contribute-inner-li"
-                        onclick="window.location.href='../contribute/contribute.html'">
-
-                        <span class="sidebar-div-sub-heading">Contribute</span>
+                    <li class="sidebar-li contribute-inner-li active">
+                        <span class="sidebar-div-sub-heading active">Contribute</span>
                     </li>
                 </ul>
 
@@ -156,12 +158,91 @@
         </div>
 
         <div class="main-container">
-            <div class="main pt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="main pt-5">
 
                 <button class="sidebar-toggler sidebar-toggler-open">
                     <span class="iconify" data-icon="icon-park-outline:indent-right" data-width="25"
                         data-height="25"></span>
                 </button>
+
+                <div class="main-content">
+                    <div class="main-heading-div">
+                        <h1 class="main-heading">
+                            Contribute
+                        </h1>
+                    </div>
+
+                    <!-- intro section -->
+                    <section class="section" id="intro-section">
+
+                        <div class="section-content-div">
+                            <p class="section-content">
+                                We greatly value and encourage all kinds of contributions.
+                                Before getting started, please review the relevant section to ensure a smooth process
+                                for everyone and to assist the maintainers in managing contributions effectively.
+                                The community eagerly awaits your input!
+                            </p>
+                        </div>
+
+                        <div class="section-sub-content-div muted-content">
+                            <p>If you love the project but don’t have the time to contribute, that’s absolutely
+                                fine!
+                                There are other simple ways to support and show your appreciation, which we’d
+                                greatly value:</p>
+
+                            <ul class="main-container-ul">
+                                <li>Give the project a star</li>
+                                <li>Share it on Twitter</li>
+                                <li>Add a reference to it in your project’s README</li>
+                                <li>Mention it at local meetups or share it with your friends and colleagues</li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                    <section class="section" id="intro-section">
+                        <div class="section-heading-div">
+                            <h2 class="section-heading">
+                                I Have a Question
+                            </h2>
+                        </div>
+
+                        <div class="section-sub-content-div muted-content mt-3">
+                            <p class="mb-0">We assume you’ve gone through the available documentation before raising
+                                a question.
+                            </p>
+                        </div>
+
+                        <div class="section-content-div">
+
+                            <p class="mt-3">It’s recommended to search for existing <a
+                                    href="https://github.com/pandevs-org/RumblesheetJS/issues"
+                                    class="redirect-link">issues</a> before asking a question, as you may find helpful
+                                information.
+                                If you come across a relevant issue but need more clarification, feel free to add your
+                                question there.
+                                Additionally, consider reaching out to the community on the rumblesheetjs <a
+                                    href="https://discord.gg/jaHHUbAD68" class="redirect-link">Discord</a> server for
+                                further support.</p>
+
+                            <p>If you still need clarification after searching, we suggest the following:
+                            </p>
+
+                            <ul class="main-container-ul">
+                                <li>Open a new <a href="https://github.com/pandevs-org/RumblesheetJS/issues/new"
+                                        class="redirect-link">issue</a>.</li>
+                                <li>Include as much detail as possible about the issue you’re encountering.</li>
+                                <li>Provide relevant information such as project version, browser, and operating system.
+                                </li>
+                            </ul>
+
+                            <p class="mt-3">We (or someone from the community) will address the issue as soon as
+                                possible.</p>
+                        </div>
+                    </section>
+
+
+                </div>
 
             </div>
         </div>

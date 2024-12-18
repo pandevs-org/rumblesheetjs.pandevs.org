@@ -1,11 +1,75 @@
 @import "../../../public/styles/variables.css";
 
+a {
+    text-decoration: none;
+}
+
 .main-container {
     width: 80%;
+    overflow-y: auto;
+}
+
+.main-content {
+    padding: 0 18%;
+    color: var(--clr-accent-900)
+}
+
+.main-heading {
+    font-size: var(--fs-450);
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(139, 31, 234, 0.3);
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section-heading-div {}
+
+.section-heading {
+    font-size: var(--fs-300);
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(139, 31, 234, 0.3);
+}
+
+.section-content-div {
+    margin-top: 15px;
+    opacity: 0.85;
+    font-size: var(--fs-130);
+}
+
+.section-sub-content-div {
+    font-size: var(--fs-130);
+}
+
+.muted-content {
+    background-color: var(--clr-accent-400);
+    border-radius: 10px;
+    padding: 7px 15px 7px 30px;
+    opacity: 0.75;
+    border-left: 4px solid var(--clr-accent-900);
+}
+
+.redirect-link {
+    color: var(--clr-accent-600);
+}
+
+.redirect-link:hover {
+    color: var(--clr-accent-700);
+}
+
+.main-container-ul {
+    margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
     .main-container {
         width: 100%;
     }
-}   
+}
+
+@media (max-width: 780px) {
+    .main-content {
+        padding: 0 10%;
+    }
+}

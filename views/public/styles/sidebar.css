@@ -12,7 +12,7 @@
     display: none;
 }
 
-ul {
+.sidebar-ul {
     list-style-type: none;
     padding: 0;
 }
@@ -142,11 +142,13 @@ ul {
         position: absolute;
         width: auto;
         display: none;
+        z-index: 1;
     }
 
     .sidebar-toggler {
         display: inline-block;
         height: 40px;
+        position: fixed;
         background-color: var(--clr-accent-700);
         color: var(--clr-accent-300);
         padding: 2px 8px 2px 4px;
@@ -154,6 +156,7 @@ ul {
         box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%) !important;
         border: 0;
     }
+
     .sidebar-toggler-close {
         position: absolute;
         right: 0;
