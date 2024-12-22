@@ -42,8 +42,8 @@
 	display: inline-block;
 	font-size: var(--fs-300);
 	line-height: normal;
-	padding: 10px;
-	height: 60px;
+	padding: auto 10px;
+	height: 55px;
 	width: fit-content;
 	outline: none;
 	text-align: center;
@@ -74,12 +74,12 @@
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	width: fit-content;
 	padding: 10px;
-	height: 60px;
+	height: 55px;
 	border-radius: 7px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: var(--fs-200);
+	font-size: var(--fs-250);
 }
 
 pre {

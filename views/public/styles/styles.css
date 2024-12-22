@@ -48,8 +48,8 @@ body {
 	position: fixed;
 	border: 0;
 	z-index: 10;
-	bottom: 0;
-	right: 0;
+	bottom: 10;
+	right: 10;
 	margin: 10px;
 	text-decoration: none;
 	box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%) !important;
