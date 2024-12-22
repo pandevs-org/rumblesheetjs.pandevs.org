@@ -53,7 +53,7 @@ a {
     font-size: var(--fs-130);
     border-radius: 10px;
     padding: 7px 15px 7px 30px;
-    opacity: 0.75;
+    opacity: 0.85;
     border-left: 4px solid var(--clr-accent-900);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
@@ -62,6 +62,7 @@ a {
     color: var(--clr-accent-600);
     font-weight: var(--fw-semi-bold);
 }
+
 .redirect-link:hover {
     color: var(--clr-accent-700);
 }
@@ -70,6 +71,7 @@ a {
     color: var(--clr-accent-700);
     font-weight: var(--fw-semi-bold);
 }
+
 .redirect-link-muted-content:hover {
     color: var(--clr-accent-800);
     font-weight: var(--fw-semi-bold);
