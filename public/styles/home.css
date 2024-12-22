@@ -68,12 +68,12 @@
 
 /* code section */
 .code-div {
-	background-color: var(--clr-accent-400);
-	/* opacity: 0.8; */
+	background-color: transparent;
+	border: 2px solid var(--clr-accent-700);
 	color: var(--clr-accent-700);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	width: fit-content;
-	padding: 15px;
+	padding: 10px;
 	height: 60px;
 	border-radius: 7px;
 	display: flex;
@@ -98,7 +98,7 @@ pre {
 }
 
 .copy-btn:hover {
-	color: var(--clr-accent-900);
+	color: var(--clr-accent-800);
 
 }
 
