@@ -160,13 +160,16 @@ pre {
 
 	.home-section-btn {
 		margin-left: 0;
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 }
 
 @media (max-width: 550px) {
 	#home .main-img {
 		max-width: 250px !important;
+	}
+	.home-cols:first-child {
+		margin-top: 0px;
 	}
 }
 
