@@ -16,6 +16,9 @@
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap"
         rel="stylesheet">
 
+    <!-- highlight js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dracula.min.css">
+
     <!-- Hamburger -->
     <link rel="stylesheet" href="../../../../public/dist/hamburger.css">
 
@@ -58,7 +61,8 @@
                             <span class="iconify redirect-icon" data-icon="eva:external-link-outline" data-width="18"
                                 data-height="18"></span>
                         </a>
-                        <a class="nav-link" aria-label="contribute link" href="./views/contribute/contribute.html">Contribute</a>
+                        <a class="nav-link" aria-label="contribute link"
+                            href="./views/contribute/contribute.html">Contribute</a>
                         <a id="nav-item" target="_blank" aria-label="Fork" data-balloon-pos="down"
                             href="https://github.com/pandevs-org/RumblesheetJS"
                             class="d-flex align-items-center justify-content-start">
@@ -75,7 +79,7 @@
         <!-- Home Section -->
         <section id="home" class="d-flex justify-content-center align-items-center">
             <div class="row home-content m-0  px-3">
-                <div class="col-12 p-0 mt-5 home-cols d-flex align-items-center justify-content-center">
+                <div class="col-12 p-0 home-cols d-flex align-items-center justify-content-center">
                     <img class="" src="./public/assets/logo/logo.png" height="120">
                 </div>
                 <div class="col-12 p-0 home-cols home-info-div d-flex justify-content-center">
@@ -83,12 +87,22 @@
                         spreadsheets into any website for enhanced data management and visualization
                     </h2>
                 </div>
-                <div class="col-12 p-0 mt-4 home-cols home-info-div d-flex justify-content-center align-items-end">
-                    <button class="home-section-btn" aria-label="fork btn"
-                        class="d-flex justify-content-center align-items-center"
-                        onclick="window.location.href='./views/docs/latest/getting-started/getting-started.html';">
-                        Get Started
-                    </button>
+
+                <div class="col-12 p-0 mt-2 home-cols home-info-div d-flex justify-content-center align-items-center">
+                            <div class="code-div">
+                                <pre class="mb-0">$ <code class="bash">npm i rumblesheetjs</code></pre>
+                                <button class="copy-btn" onclick="copyToClipboard(this)" aria-label="copy" title="copy">
+                                    <span class="iconify mt-0" data-icon="lucide:clipboard-copy" data-width="25"
+                                        data-height="25"></span>
+                                </button>
+                            </div>
+
+                            <button class="home-section-btn" aria-label="fork btn"
+                                class="d-flex justify-content-center align-items-center"
+                                onclick="window.location.href='./views/docs/latest/getting-started/getting-started.html';">
+                                Get Started
+                            </button>
+                    
                 </div>
             </div>
         </section>
@@ -116,6 +130,12 @@
 
     </div>
 
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+
     <!-- Boostrap CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -124,14 +144,12 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
         </script>
 
+    <!-- Include Highlight.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
     <!-- iconify -->
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
 
     <!-- local js -->
     <script src="./public/js/index.js"></script>

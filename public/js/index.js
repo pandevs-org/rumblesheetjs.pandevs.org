@@ -60,7 +60,6 @@ if (localStorage.getItem('theme') != null) {
 toggle.addEventListener('click', change_theme);
 
 
-
 // ----------------- navbar ----------------- //
 var hamburger = document.querySelector(".hamburger");
 var navbarUnscrolled = document.querySelector('.navbar-unscrolled')
@@ -88,7 +87,6 @@ navLinks.forEach((navLink) => {
     })
 })
 
-
 // ----------------- sidebar toggler ----------------- //
 var sidebarTogglerClose = document.querySelector(".sidebar-toggler-close");
 var sidebarTogglerOpen = document.querySelector(".sidebar-toggler-open");
@@ -102,4 +100,24 @@ if (sidebarTogglerClose || sidebarTogglerOpen) {
     sidebarTogglerOpen.addEventListener("click", function () {
         sidebarContainer.style.display = "block";
     });
+}
+
+// ----------------- highlight js ----------------- //
+// Initialize Highlight.js
+hljs.highlightAll();
+
+// ----------------- copy code to clipboard ----------------- //
+// Copy to Clipboard Function
+function copyToClipboard(button) {
+    const pre = button.parentElement;
+    const code = pre.querySelector('code').innerText;
+
+    navigator.clipboard.writeText(code).then(() => {
+        button.querySelector('.iconify').setAttribute('data-icon', 'charm:tick');
+        button.setAttribute('title', 'copied')
+        setTimeout(() => {
+            button.querySelector('.iconify').setAttribute('data-icon', 'lucide:clipboard-copy');
+            button.setAttribute('title', 'copy')
+        }, 2000);
+    })
 }
