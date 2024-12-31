@@ -4,8 +4,8 @@ import { Component, Input, ViewChild, ElementRef } from "@angular/core";
 @Component({
   selector: "app-code-block",
   imports: [CommonModule],
-  templateUrl: "./code.component.html",
-  styleUrl: "./code.component.css",
+  templateUrl: "./code-block.component.html",
+  styleUrl: "./code-block.component.css",
 })
 export class CodeBlockComponent {
   @Input() prefixText: string = "";

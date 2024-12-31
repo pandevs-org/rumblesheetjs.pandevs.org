@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CodeBlockComponent } from './code.component';
+import { CodeBlockComponent } from './code-block.component';
 
-describe('CodeComponent', () => {
+describe('CodeBlockComponent', () => {
   let component: CodeBlockComponent;
   let fixture: ComponentFixture<CodeBlockComponent>;
 

@@ -1,0 +1,51 @@
+<div class="footer d-flex justify-content-center align-items-center">
+  <div class="row" style="margin-right: 0; margin-left: 0">
+    <div class="col-12 d-flex justify-content-center mt-4 mb-4 text-center">
+      <p class="contrib-info m-0">
+        Built with all the
+        <span
+          class="iconify"
+          style="color: #a856f0"
+          data-icon="mdi:heart"
+          data-width="23"
+          data-height="23"
+        >
+        </span>
+        in the world by
+        <br />
+        <a href="https://pandevs.org" target="_blank" class="pandevs-link"
+          >pandevs.org</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
+
+<button
+  id="toggle-theme"
+  class="rounded-circle d-flex align-items-center justify-content-center"
+  aria-label="Toggle Theme"
+  (click)="changeTheme()"
+>
+  <div [ngClass]="isDarkMode ? '' : 'd-none'">
+    <span
+      class="iconify iconify-navbar"
+      data-icon="ri:sun-fill"
+      style="color: #f1eaff"
+      data-width="30"
+      data-height="30"
+    >
+    </span>
+  </div>
+
+  <div [ngClass]="isDarkMode ? 'd-none' : ''">
+    <span
+      class="iconify iconify-navbar"
+      data-icon="ri:moon-fill"
+      style="color: #f1eaff"
+      data-width="30"
+      data-height="30"
+    >
+    </span>
+  </div>
+</button>

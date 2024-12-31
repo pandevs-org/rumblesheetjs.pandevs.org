@@ -4,7 +4,6 @@ nav>.container-fluid {
 	padding-bottom: 6.250px;
 	
 }
-
 nav>.container-fluid>#navbarNavAltMarkup {
 	height: 100%;
 }
@@ -14,42 +13,24 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	align-items: center;
 	justify-content: center;
 }
-
-.navbar-bg {
+.navbar-home-section {
+	padding: 24px 48px 8px;
+}
+.navbar-other-section {
+	padding: 0px 48px 0px;
 	background-color: var(--clr-accent-400);
 	box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
-
-.navbar-other-sections {
-	background-color: var(--clr-accent-400);
+.logo {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5) !important;
+	max-width: 70px;
 }
-
-.hamburger-inner,
-.hamburger-inner::after,
-.hamburger-inner::before {
-	background-color: var(--clr-accent-600) !important;
-}
-
 .navbar-brand {
 	color: var(--clr-accent-800);
 	height: 100%;
 	display: flex;
 	align-items: center;
 }
-
-.logo {
-	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5) !important;
-	max-width: 70px;
-}
-
-.navbar-scrolled {
-	padding: 0px 48px 0px;
-}
-
-.navbar-unscrolled {
-	padding: 24px 48px 8px;
-}
-
 .nav-link {
 	white-space: nowrap;
 	height: 100%;
@@ -61,44 +42,14 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	font-size: var(--fs-200) !important;
 	position: relative;
 }
-
 .nav-link.active {
 	color: var(--clr-accent-800) !important;
 }
-
 .nav-link:hover {
 	color: var(--clr-accent-800) !important;
 }
-
 .nav-link:focus {
 	color: var(--clr-accent-800) !important;
-}
-
-.nav-link:before {
-	position: absolute;
-	bottom: -12px;
-	content: "";
-	width: 83.5%;
-	height: 3px;
-	background: var(--clr-accent-800);
-	transform: translateX(-100%);
-	opacity: 0;
-}
-
-.nav-link:hover:before {
-	opacity: 1;
-	transition: 0.5s transform ease, 0.8s opacity ease;
-	transform: translateX(0);
-}
-
-.nav-link.active:before {
-	opacity: 1;
-	transition: 0.5s transform ease, 0.8s opacity ease;
-	transform: translateX(0);
-}
-
-.redirect-icon {
-	margin-top: 3px;
 }
 
 /* fork btn */
@@ -139,6 +90,12 @@ nav>.container-fluid>#navbarNavAltMarkup {
 }
 
 /* navbar-toggler */
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+	background-color: var(--clr-accent-600) !important;
+}
+
 .navbar-toggler:focus {
 	box-shadow: 0 0 0 0;
 }
@@ -150,11 +107,6 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	.fork-btn {
 		margin: 4px 0;
 	}
-
-	.nav-link:before {
-		bottom: 0px;
-	}
-	
 }
 
 @media (max-width: 780px) {}
@@ -163,10 +115,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	.logo {
 		width: 60px;
 	}
-	.navbar-unscrolled {
-		padding: 0;
-	}
-	.navbar-scrolled {
+	.navbar {
 		padding: 0;
 	}
 }
