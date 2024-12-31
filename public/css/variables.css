@@ -1,0 +1,39 @@
+:root {
+    --clr-accent-100: #ffffff;
+    --clr-accent-200: #F1EAFF;
+    --clr-accent-300: #E5D4FF;
+    --clr-accent-400: #DCBFFF;
+    --clr-accent-500: #D5B0FD;
+    --clr-accent-600: #A856F0; 
+    --clr-accent-700: #8B1FEA;
+    --clr-accent-800: #7612CE; 
+    --clr-accent-900: #560C97;
+    --clr-accent-950: #36085E; 
+  
+    --clr-heading: #212529;
+    --clr-sub-heading: #212529;
+    --clr-info: hsl(210, 11%, 15%);
+  
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+  
+    --fs-100: 0.80rem;
+    --fs-120: 0.86rem;
+    --fs-130: 0.90rem;
+    --fs-140: 0.93rem;
+    --fs-150: 0.96rem;
+    --fs-200: 1rem;
+    --fs-250: 1.25rem;
+    --fs-300: 1.5rem;
+    --fs-350: 1.75rem;
+    --fs-400: 2rem;
+    --fs-450: 2.25rem;
+    --fs-500: 2.5rem;
+    --fs-600: 3rem;
+    --fs-650: 3.75rem;
+    --fs-700: 4.5rem;
+    --fs-750: 5rem;
+    --fs-800: 6rem;
+    --fs-900: 7.5rem;
+  }

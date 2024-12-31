@@ -1,0 +1,39 @@
+/* code section */
+.code-div {
+    background-color: transparent;
+    border: 2px solid var(--clr-accent-700);
+    color: var(--clr-accent-700);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-250);
+  }
+  
+  pre {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .code-prefix {
+    margin-right: 10px;
+  }
+
+  .copy-btn {
+    margin-left: 15px;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 1px;
+    color: var(--clr-accent-700);
+    font-size: 12px;
+    background-color: transparent;
+  }
+  
+  .copy-btn:hover {
+    cursor: pointer;
+    color: var(--clr-accent-800);
+  }
+  

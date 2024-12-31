@@ -1,0 +1,39 @@
+<div class="sidebar-container">
+  <div class="sidebar pt-5" data-aos="fade-up" data-aos-delay="100">
+    <button class="sidebar-toggler sidebar-toggler-close">
+      <span
+        class="iconify"
+        data-icon="icon-park-outline:indent-left"
+        data-width="25"
+        data-height="25"
+      ></span>
+    </button>
+
+    <ng-container *ngFor="let section of sidebarItems">
+      <!-- Display section only if it's available in the current version -->
+      <ul
+        *ngIf="section.versions.includes(currentVersion)"
+        [id]="section.id + '-ul'"
+        class="sidebar-ul"
+      >
+        <!-- Section Title -->
+        <li class="sidebar-li" [id]="'sidebar-li-' + section.id">
+          <span class="sidebar-div-heading">{{ section.title }}</span>
+        </li>
+
+        <!-- Section Items -->
+        <ng-container *ngFor="let item of section.items">
+
+        <li
+          *ngIf="item.versions.includes(currentVersion)"
+          class="sidebar-li"
+          [id]="['section.id' + '-' + 'item.title']"
+        >
+          <span class="sidebar-div-sub-heading">{{ item.title }}</span>
+        </li>
+      </ng-container>
+
+      </ul>
+    </ng-container>
+  </div>
+</div>

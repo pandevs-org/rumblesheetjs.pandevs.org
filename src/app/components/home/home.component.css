@@ -1,0 +1,141 @@
+/* home */
+#home {
+  height: 87vh !important;
+  background-color: none;
+}
+
+#home .home-content {
+  max-width: 600px;
+}
+
+#home .home-cols {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-cols:first-child {
+  margin-top: 48px;
+}
+
+#home .home-heading {
+  color: var(--clr-accent-800);
+}
+
+#home .home-info {
+  font-size: var(--fs-300);
+  font-weight: 400;
+  color: var(--clr-accent-950);
+}
+
+/* home-section-btn */
+.home-section-btn {
+  appearance: none;
+  background-color: #8b1fea;
+  border: 2px solid #8b1fea;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--fs-300);
+  line-height: normal;
+  padding: auto 10px;
+  height: 55px;
+  width: fit-content;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-left: 12px;
+}
+
+.home-section-btn:hover {
+  box-shadow: rgba(139, 31, 234, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.home-section-btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* media query */
+@media (max-width: 1200px) {
+  #home .home-heading {
+    font-size: var(--fs-600) !important;
+  }
+
+  #home .home-info {
+    font-size: var(--fs-300);
+  }
+
+  #home .home-content {
+    height: 40vh;
+  }
+
+  #home .main-img {
+    max-width: 400px !important;
+  }
+}
+
+@media (max-width: 945px) {
+  #home .home-content {
+    font-size: var(--fs-500) !important;
+  }
+
+  #home .main-img {
+    max-width: 350px !important;
+  }
+}
+
+@media (max-width: 780px) {
+  #home .home-heading {
+    font-size: var(--fs-400) !important;
+  }
+
+  #home .home-info {
+    font-size: var(--fs-250);
+  }
+
+  #home .main-img {
+    max-width: 300px !important;
+  }
+
+  .know-more-btn {
+    font-size: var(--fs-200) !important;
+    height: 50px;
+  }
+
+  .home-cols:first-child {
+    margin-top: 30px;
+  }
+
+  .home-info-div {
+    flex-direction: column;
+  }
+
+  .home-section-btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  #home .main-img {
+    max-width: 250px !important;
+  }
+  .home-cols:first-child {
+    margin-top: 0px;
+  }
+}
+
+@media (max-height: 820px) {
+  #home .main-img {
+    max-width: 250px !important;
+  }
+}

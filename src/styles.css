@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+	background-color: var(--clr-accent-300);
+	background-image: url(/public/images/background/light-gradient.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Fira Sans', sans-serif;
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+}

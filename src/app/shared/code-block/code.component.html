@@ -1,0 +1,30 @@
+<div class="code-div">
+  <pre class="mb-0">
+    <span class="code-prefix" *ngIf="prefixText != ''">{{prefixText}}</span>
+    <code [class]="language" #codeElement><ng-content></ng-content></code>
+  </pre>
+  <button
+    class="copy-btn"
+    (click)="copyToClipboard()"
+    [attr.aria-label]="buttonTitle"
+    [title]="buttonTitle"
+  >
+    <div [ngClass]="isCopyIcon ? '' : 'd-none'">
+      <span
+        class="iconify mt-0"
+        data-icon="lucide:clipboard-copy"
+        data-width="25"
+        data-height="25"
+      ></span>
+    </div>
+
+    <div [ngClass]="isCopyIcon ? 'd-none' : ''">
+      <span
+        class="iconify mt-0"
+        data-icon="charm:tick"
+        data-width="25"
+        data-height="25"
+      ></span>
+    </div>
+  </button>
+</div>

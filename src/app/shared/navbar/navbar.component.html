@@ -1,0 +1,68 @@
+<nav
+  class="navbar navbar-other-sections navbar-expand-lg fixed-top navbar-scrolled shadow-lg"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <img src="public/images/logo-branding.png" height="50" alt="Logo" />
+    </a>
+    <button
+      class="hamburger hamburger--spin navbar-toggler"
+      type="button"
+      (click)="toggleNavbar()"
+      aria-controls="navbarNavAltMarkup"
+      [attr.aria-expanded]="isNavbarCollapsed ? 'true' : 'false'"
+      aria-label="Toggle navigation"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      [class.show]="isNavbarCollapsed"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" aria-label="get started link" routerLink="/"
+          >Docs</a
+        >
+        <a class="nav-link" target="_blank" aria-label="demo link" href="#demo">
+          Demo
+          <span
+            class="iconify redirect-icon"
+            data-icon="eva:external-link-outline"
+            data-width="18"
+            data-height="18"
+          ></span>
+        </a>
+        <a
+          class="nav-link active"
+          aria-label="contribute link"
+          href="#contribute"
+          >Contribute</a
+        >
+        <a
+          id="nav-item"
+          target="_blank"
+          aria-label="Fork"
+          href="https://github.com/pandevs-org/RumblesheetJS"
+          class="d-flex align-items-center justify-content-start"
+        >
+          <button
+            class="fork-btn"
+            aria-label="fork btn"
+            class="d-flex justify-content-center align-items-center"
+          >
+            <span
+              class="iconify"
+              data-icon="mdi:github"
+              data-width="23"
+              data-height="23"
+            ></span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
