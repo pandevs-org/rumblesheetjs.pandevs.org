@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="body-layout d-flex">
+  <div class="sidebar-container">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="main-container">
+    <div class="main">
+      <button class="sidebar-toggler sidebar-toggler-open">
+        <span
+          class="iconify"
+          data-icon="icon-park-outline:indent-right"
+          data-width="25"
+          data-height="25"
+        ></span>
+      </button>
+
+      <div class="main-content">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

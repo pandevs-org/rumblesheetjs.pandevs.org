@@ -1,10 +1,10 @@
 <nav
-  class="navbar navbar-expand-lg fixed-top"
+  class="navbar navbar-expand-lg sticky-top"
   [ngClass]="isHomeSection? 'navbar-home-section': 'navbar-other-section'"
 >
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/">
-      <img src="public/images/logo/logo-branding.png" height="50" alt="Logo" />
+      <img class="logo" src="public/images/logo/logo-branding.png" alt="Logo" />
     </a>
     <button
       class="hamburger hamburger--spin navbar-toggler"
@@ -40,6 +40,7 @@
         <a
           class="nav-link"
           aria-label="contribute link"
+          [routerLink]="['/contribute']"
           >Contribute</a
         >
         <a
@@ -65,3 +66,5 @@
     </div>
   </div>
 </nav>
+
+<router-outlet />

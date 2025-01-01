@@ -9,6 +9,7 @@ import { Component } from "@angular/core";
 })
 export class SidebarComponent {
   currentVersion = 'v2';
+  isSidebarOpen = false;
 
   sidebarItems = [
     {

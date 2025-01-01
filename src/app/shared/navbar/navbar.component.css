@@ -22,14 +22,16 @@ nav>.container-fluid>#navbarNavAltMarkup {
 	box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
 .logo {
-	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5) !important;
-	max-width: 70px;
+	max-height: 50px;
 }
 .navbar-brand {
 	color: var(--clr-accent-800);
 	height: 100%;
 	display: flex;
 	align-items: center;
+}
+.navbar-brand:hover {
+	cursor: pointer;
 }
 .nav-link {
 	white-space: nowrap;
@@ -47,6 +49,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 }
 .nav-link:hover {
 	color: var(--clr-accent-800) !important;
+	cursor: pointer;
 }
 .nav-link:focus {
 	color: var(--clr-accent-800) !important;
@@ -113,7 +116,7 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 @media (max-width: 550px) {
 	.logo {
-		width: 60px;
+		height: 40px;
 	}
 	.navbar {
 		padding: 0;
@@ -124,6 +127,6 @@ nav>.container-fluid>#navbarNavAltMarkup {
 
 @media (max-height: 635px) {
 	.logo {
-		width: 55px;
+		height: 45px;
 	}
 }

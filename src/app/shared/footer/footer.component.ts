@@ -44,7 +44,7 @@ export class FooterComponent {
         --clr-accent-900: #F1EAFF;
         --clr-accent-950: #ffffff;
       `);
-      this.renderer.setStyle(document.body, 'background-image', 'url(/public/images/background/dark-gradient.png)');
+      // this.renderer.setStyle(document.body, 'background-image', 'url(/public/images/background/dark-gradient.png)');
     } else {
       this.renderer.setAttribute(root, 'style', `
         --clr-accent-100: #ffffff;
@@ -58,7 +58,7 @@ export class FooterComponent {
         --clr-accent-900: #560C97;
         --clr-accent-950: #36085E;
       `);
-      this.renderer.setStyle(document.body, 'background-image', 'url(/public/images/background/light-gradient.png)');
+      // this.renderer.setStyle(document.body, 'background-image', 'url(/public/images/background/light-gradient.png)');
     }
   }
 }

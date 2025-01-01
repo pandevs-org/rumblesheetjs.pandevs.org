@@ -1,12 +1,14 @@
 /* footer */
 .footer {
-	height: 13vh;
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	z-index: 9;
 }
-
 .pandevs-link {
     text-decoration: none;
 	color: var(--clr-accent-950);
-	font-size: var(--fs-150);
+	font-size: var(--fs-100);
 }
 .pandevs-link:hover {
 	color: var(--clr-accent-800);
@@ -15,7 +17,7 @@
 
 .contrib-info {
 	color: var(--clr-accent-950);
-	font-size: var(--fs-150);
+	font-size: var(--fs-100);
 }
 
 /* Toggle Theme */

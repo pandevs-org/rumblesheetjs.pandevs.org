@@ -1,5 +1,4 @@
-<div class="sidebar-container">
-  <div class="sidebar pt-5" data-aos="fade-up" data-aos-delay="100">
+  <div class="sidebar" data-aos="fade-up" data-aos-delay="100">
     <button class="sidebar-toggler sidebar-toggler-close">
       <span
         class="iconify"
@@ -23,17 +22,14 @@
 
         <!-- Section Items -->
         <ng-container *ngFor="let item of section.items">
-
-        <li
-          *ngIf="item.versions.includes(currentVersion)"
-          class="sidebar-li"
-          [id]="['section.id' + '-' + 'item.title']"
-        >
-          <span class="sidebar-div-sub-heading">{{ item.title }}</span>
-        </li>
-      </ng-container>
-
+          <li
+            *ngIf="item.versions.includes(currentVersion)"
+            class="sidebar-li"
+            [id]="['section.id' + '-' + 'item.title']"
+          >
+            <span class="sidebar-div-sub-heading">{{ item.title }}</span>
+          </li>
+        </ng-container>
       </ul>
     </ng-container>
-  </div>
 </div>
